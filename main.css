@@ -153,13 +153,16 @@ header {
   color: #f07818;
   text-shadow: 2px 2px black;
   position: absolute;
+  vertical-align: middle;
+  top: 100px;
 }
 
 #groovy {
   font-family: Pacifico;
   font-size: 150px;
   display: inline-block;
-  margin: 50px 0px 0px 55px
+  top: 225px;
+  margin: 0 0 0 50px;
 
 }
 
@@ -169,8 +172,16 @@ header {
   display: inline-block;
   color: #fff;
   margin: 5px 0 0 105px;
-  top: 225px;
+  top: 400px;
 }
+
+#currentColorFont {
+  font-family: Monoton;
+  color: #c2e700;
+  font-size: 100px;
+  margin-top: 165px;
+}
+
 
 #polaroid {
   height: 940px;
@@ -194,17 +205,14 @@ header {
 
 }
 
-.currentColor {
-  left: 35px;
-}
-
 .currentColorContainer {
   display: inline-block;
   position: relative;
-  left: 1500px;
-  bottom: 1000px;
-  font-size: 50px;
+  left: 1450px;
+  bottom: 970px;
 }
+
+
 
 .pixel {
   height: 20px;
@@ -220,10 +228,11 @@ header {
 .currentColor {
   height: 200px;
   width: 200px;
-  border: 25px solid black;
+  border: 20px solid black;
   border-radius: 50%;
   position: absolute;
   display: inline-block;
+  left: 90px;
 }
 
 .container {

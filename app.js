@@ -3,7 +3,8 @@
 var drawingArea = document.getElementById('drawingArea');
 var brush = '#fff';
 var currentColorCircle = document.getElementsByClassName('currentColor')[0];
-var currentColor = '#fff';
+var currentColor;
+currentColorCircle.style.backgroundColor = "#fff";
 
 
 // functions that change the brush color
@@ -11,9 +12,6 @@ var changeBrushAqua = function() {
   brush = '#78c0a8';
 };
 
-var currentColorAqua = function() {
-  currentColorCircle.style.backgroundColor = '#78c0a9';
-}
 
 var changeBrushWhite = function() {
   brush = '#fff';
@@ -55,11 +53,18 @@ var changeBrushGrey = function() {
   brush = '#787373';
 }
 
+//functions that change current color
+var currentColorAqua = function() {
+  currentColorCircle.style.backgroundColor = '#78c0a9';
+};
+
 
 
 var aquamarine = document.getElementsByClassName('aquamarine')[0];
 aquamarine.addEventListener('click', changeBrushAqua);
 aquamarine.addEventListener('click', currentColorAqua);
+
+
 
 var white = document.getElementsByClassName('white')[0];
 white.addEventListener('click', changeBrushWhite);
