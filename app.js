@@ -1,11 +1,19 @@
-//if white palette clicked after aqua palette change brush to white
+//when color palate is clicked, change currentColorCircle to that color
 
 var drawingArea = document.getElementById('drawingArea');
 var brush = '#fff';
+var currentColorCircle = document.getElementsByClassName('currentColor')[0];
+var currentColor = '#fff';
 
+
+// functions that change the brush color
 var changeBrushAqua = function() {
   brush = '#78c0a8';
 };
+
+var currentColorAqua = function() {
+  currentColorCircle.style.backgroundColor = '#78c0a9';
+}
 
 var changeBrushWhite = function() {
   brush = '#fff';
@@ -47,8 +55,11 @@ var changeBrushGrey = function() {
   brush = '#787373';
 }
 
+
+
 var aquamarine = document.getElementsByClassName('aquamarine')[0];
 aquamarine.addEventListener('click', changeBrushAqua);
+aquamarine.addEventListener('click', currentColorAqua);
 
 var white = document.getElementsByClassName('white')[0];
 white.addEventListener('click', changeBrushWhite);
@@ -79,7 +90,6 @@ brown.addEventListener('click', changeBrushBrown);
 
 var grey = document.getElementsByClassName('grey')[0];
 grey.addEventListener('click', changeBrushGrey);
-
 
 
 

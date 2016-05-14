@@ -194,6 +194,18 @@ header {
 
 }
 
+.currentColor {
+  left: 35px;
+}
+
+.currentColorContainer {
+  display: inline-block;
+  position: relative;
+  left: 1500px;
+  bottom: 1000px;
+  font-size: 50px;
+}
+
 .pixel {
   height: 20px;
   width: 20px;
@@ -203,6 +215,15 @@ header {
   display: inline-block;
   margin: 0% 0% 0% 0%;
   vertical-align: top;
+}
+
+.currentColor {
+  height: 200px;
+  width: 200px;
+  border: 25px solid black;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
 }
 
 .container {
