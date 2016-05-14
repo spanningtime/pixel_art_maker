@@ -145,29 +145,31 @@ input[type=button] {width: auto; overflow: visible;}
 
 
 body {
-  background: url(carpet_texture.jpg);
+  background: url(images/carpet_texture.jpg);
   background-size: cover;
 }
 
 header {
-  font-size: 150px;
-  color: #e4ad54;
+  color: #f07818;
   text-shadow: 2px 2px black;
   position: absolute;
-  margin: 0 0 0 30px;
 }
 
 #groovy {
   font-family: Pacifico;
+  font-size: 150px;
   display: inline-block;
+  margin: 50px 0px 0px 55px
 
 }
 
 #pixelsFont {
   font-family: VT323;
+  font-size: 100px;
   display: inline-block;
   color: #fff;
-  top: 225px
+  margin: 5px 0 0 105px;
+  top: 225px;
 }
 
 #polaroid {
@@ -178,6 +180,7 @@ header {
   border: 3px solid #dcdcdc;
   border-radius: 5px;
   margin-bottom: 20px;
+  box-shadow: 3px 3px 3px 0 black;
 }
 
 #drawingArea {
@@ -203,8 +206,9 @@ header {
 }
 
 .container {
-  display: inline-block;
-  margin: 50px 20px 500px 1500px;
+  position: relative;
+  display: block;
+  margin-left: 395px;
 }
 
 .palette {
@@ -213,10 +217,51 @@ header {
   border: 10px solid black;
   border-radius: 50%;
   position: inherit;
-  background-color: #fff;
-
+  display: inline-block;
 }
 
 .aquamarine {
   background-color: #78c0a8;
+}
+
+.white {
+  background-color: #fff;
+
+}
+
+.cream {
+  background-color: #fcebb6;
+
+}
+
+.orange {
+  background-color: #f07818;
+}
+
+.mustard {
+  background-color: #f0a830;
+}
+
+.puke {
+  background-color: #c8bd27;
+}
+
+.pinkRed {
+  background-color: #ce5050;
+}
+
+.blue {
+  background-color: #444c74;
+}
+
+.olive {
+  background-color: #456b32;
+}
+
+.brown {
+  background-color: #674c19;
+}
+
+.grey {
+  background-color: #787373;
 }
