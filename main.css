@@ -150,7 +150,6 @@ body {
 }
 
 header {
-  color: #f07818;
   text-shadow: 2px 2px black;
   position: absolute;
   vertical-align: middle;
@@ -158,11 +157,11 @@ header {
 }
 
 #groovy {
+  color: #f07818;
   font-family: Pacifico;
   font-size: 150px;
   display: inline-block;
-  top: 225px;
-  margin: 0 0 0 50px;
+  margin: 130px 0 0 50px;
 
 }
 
@@ -171,15 +170,14 @@ header {
   font-size: 100px;
   display: inline-block;
   color: #fff;
-  margin: 5px 0 0 105px;
-  top: 400px;
+  margin: 310px 0 0 105px;
 }
 
-#currentColorFont {
+#currentColorFont, #eraserFont {
   font-family: Monoton;
   color: #c2e700;
-  font-size: 100px;
-  margin-top: 165px;
+  font-size: 80px;
+  margin: 165px 0 0 0;
 }
 
 
@@ -206,12 +204,17 @@ header {
 }
 
 .currentColorContainer {
-  display: inline-block;
-  position: relative;
-  left: 1450px;
-  bottom: 970px;
+  position: absolute;
+  right: 130px;
+  bottom: 850px;
+
 }
 
+.eraserContainer {
+  position: absolute;
+  margin-left: 1460px;
+  bottom: 500px
+}
 
 
 .pixel {
@@ -219,25 +222,34 @@ header {
   width: 20px;
   background-color: black;
   position: relative;
-  border: none;
   display: inline-block;
-  margin: 0% 0% 0% 0%;
+  margin: 0 0 0 0;
   vertical-align: top;
+  border-spacing: none;
 }
 
 .currentColor {
-  height: 200px;
-  width: 200px;
-  border: 20px solid black;
+  height: 150px;
+  width: 150px;
+  border: 15px solid black;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 90px
+}
+
+.eraser {
+  height: 150px;
+  width: 150px;
+  background-color: #000;
+  border: 15px solid white;
   border-radius: 50%;
   position: absolute;
   display: inline-block;
-  left: 90px;
+  margin-left: 115px;
 }
 
-.container {
-  position: relative;
-  display: block;
+
+.paletteContainer {
   margin-left: 395px;
 }
 

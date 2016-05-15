@@ -7,64 +7,72 @@ var currentColor;
 currentColorCircle.style.backgroundColor = "#fff";
 
 
-// functions that change the brush color
+// functions that change the brush color and current color
 var changeBrushAqua = function() {
   brush = '#78c0a8';
+  currentColorCircle.style.backgroundColor = brush
 };
-
 
 var changeBrushWhite = function() {
   brush = '#fff';
+  currentColorCircle.style.backgroundColor = brush
 };
 
 var changeBrushCream = function() {
   brush = '#fcebb6';
+  currentColorCircle.style.backgroundColor = brush
 };
 
 var changeBrushOrange = function() {
   brush = '#f07818';
+  currentColorCircle.style.backgroundColor = brush
 };
 
 var changeBrushMustard = function() {
   brush = '#f0a830';
+  currentColorCircle.style.backgroundColor = brush
 };
 
 var changeBrushPuke = function() {
   brush = '#c8bd27';
+  currentColorCircle.style.backgroundColor = brush
 };
 
 var changeBrushPinkRed = function() {
   brush = '#ce5050';
+  currentColorCircle.style.backgroundColor = brush
 }
 
 var changeBrushBlue = function() {
   brush = '#444c74';
+  currentColorCircle.style.backgroundColor = brush
 }
 
 var changeBrushOlive = function() {
   brush = '#456b32';
+  currentColorCircle.style.backgroundColor = brush
 }
 
 var changeBrushBrown = function() {
   brush = '#674c19';
+  currentColorCircle.style.backgroundColor = brush
 }
 
 var changeBrushGrey = function() {
   brush = '#787373';
+  currentColorCircle.style.backgroundColor = brush
 }
 
-//functions that change current color
-var currentColorAqua = function() {
-  currentColorCircle.style.backgroundColor = '#78c0a9';
-};
+var changeBrushEraser = function() {
+  brush = '#000';
+  currentColorCircle.style.backgroundColor = brush
+}
 
 
 
+//grabbing elements and setting event listeners for changing //brush color
 var aquamarine = document.getElementsByClassName('aquamarine')[0];
 aquamarine.addEventListener('click', changeBrushAqua);
-aquamarine.addEventListener('click', currentColorAqua);
-
-
 
 var white = document.getElementsByClassName('white')[0];
 white.addEventListener('click', changeBrushWhite);
@@ -96,12 +104,12 @@ brown.addEventListener('click', changeBrushBrown);
 var grey = document.getElementsByClassName('grey')[0];
 grey.addEventListener('click', changeBrushGrey);
 
+var eraser = document.getElementsByClassName('eraser')[0];
+eraser.addEventListener('click', changeBrushEraser);
 
 
 
-
-
-
+//loop to create divs and add event listeners to each div
 for (var x = 0; x < 1188; x++) {
   var pixel = document.createElement('div');
   pixel.className = "pixel";
