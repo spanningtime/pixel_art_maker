@@ -7,8 +7,18 @@
     <link href='https://fonts.googleapis.com/css?family=Pacifico|VT323|Monoton' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header id='groovy'>groovy</header> <
-    <header id='pixelsFont'>PIXELS</header>
+
+    <div class='headerContainer'
+      <header id='groovy'>groovy</header> <br>
+      <header id='pixelsFont'>PIXELS</header>
+    </div>
+
+    <div class='colorAndEraserContainer'
+      <p id='currentColorFont'>color</p>
+      <div class='currentColor'></div>
+      <p id='eraserFont'>eraser</p>
+      <div class='eraser'></div>
+    </div>
 
     <div id='polaroid'>
       <div id='drawingArea'>
@@ -20,7 +30,6 @@
       <div class='palette white'></div>
       <div class='palette cream'></div>
       <div class='palette orange'></div>
-      <div class='palette mustard'></div>
       <div class='palette puke'></div>
       <div class='palette pinkRed'></div>
       <div class='palette blue'></div>
@@ -29,15 +38,8 @@
       <div class='palette grey'></div>
     </div>
 
-    <div class='currentColorContainer'
-      <p id='currentColorFont'>color</p>
-      <div class ='currentColor'></div>
-    </div>
 
-    <div class='eraserContainer'>
-      <p id='eraserFont'>eraser</p>
-      <div class='eraser'></div>
-    </div>
+
 
   <script src='app.js'></script>
   </body>

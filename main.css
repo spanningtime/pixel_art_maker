@@ -149,11 +149,10 @@ body {
   background-size: cover;
 }
 
-header {
+.headerContainer {
   text-shadow: 2px 2px black;
-  position: absolute;
-  vertical-align: middle;
-  top: 100px;
+  position: relative;
+  display: inline
 }
 
 #groovy {
@@ -161,7 +160,9 @@ header {
   font-family: Pacifico;
   font-size: 150px;
   display: inline-block;
-  margin: 130px 0 0 50px;
+  position: absolute;
+  margin: 0px 0px 0px 50px;
+
 
 }
 
@@ -170,14 +171,17 @@ header {
   font-size: 100px;
   display: inline-block;
   color: #fff;
-  margin: 310px 0 0 105px;
+  position: absolute;
+  margin: 0px 0px 5px 60px;
+	top: 175px
 }
 
 #currentColorFont, #eraserFont {
   font-family: Monoton;
   color: #c2e700;
-  font-size: 80px;
-  margin: 165px 0 0 0;
+  font-size: 70px;
+	display: inline;
+	position: absolute;
 }
 
 
@@ -188,32 +192,30 @@ header {
   margin: 0 auto;
   border: 3px solid #dcdcdc;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 5px;
   box-shadow: 3px 3px 3px 0 black;
+  position: relative
+	display: inline-block;
 }
 
 #drawingArea {
   height: 670px;
   width: 726px;
   background-color: black;
-  margin: 0 auto;
-  margin-top: 60px;
   border-radius: 5px;
   border: 3px solid #ffffff;
+  position: absolute;
+  margin: 50px 50px 40px 55px
 
 }
 
-.currentColorContainer {
-  position: absolute;
-  right: 130px;
-  bottom: 850px;
+.colorAndEraserContainer {
+  position: relative;
+  display: inline-block;
+	margin: 500px 20px
 
-}
 
-.eraserContainer {
-  position: absolute;
-  margin-left: 1460px;
-  bottom: 500px
 }
 
 
@@ -229,28 +231,32 @@ header {
 }
 
 .currentColor {
-  height: 150px;
-  width: 150px;
-  border: 15px solid black;
+  height: 100px;
+  width: 100px;
+  border: 10px solid black;
   border-radius: 50%;
   position: absolute;
-  margin-left: 90px
+	display: inline;
+	margin: 0 0 0 350px;
+	top: 5px;
 }
 
 .eraser {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   background-color: #000;
-  border: 15px solid white;
+  border: 10px solid white;
   border-radius: 50%;
   position: absolute;
-  display: inline-block;
-  margin-left: 115px;
+  display: inline;
+  margin: 0 0 0 350px
 }
 
 
 .paletteContainer {
-  margin-left: 395px;
+  margin-left: 1450px;
+	position: relative;
+	bottom: 975px
 }
 
 .palette {
@@ -259,7 +265,7 @@ header {
   border: 10px solid black;
   border-radius: 50%;
   position: inherit;
-  display: inline-block;
+  display: block;
 }
 
 .aquamarine {
