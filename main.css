@@ -162,8 +162,6 @@ body {
   display: inline-block;
   position: absolute;
   margin: 0px 0px 0px 50px;
-
-
 }
 
 #pixelsFont {
@@ -206,16 +204,14 @@ body {
   border-radius: 5px;
   border: 3px solid #ffffff;
   position: absolute;
-  margin: 50px 50px 40px 55px
+  margin: 50px 50px 45px 60px
 
 }
 
 .colorAndEraserContainer {
   position: relative;
   display: inline-block;
-	margin: 500px 20px
-
-
+	margin: 500px 0px 0px 45px;
 }
 
 

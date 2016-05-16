@@ -7,7 +7,7 @@ var currentColor;
 currentColorCircle.style.backgroundColor = '#78c0a8';
 
 
-// functions that change the brush color and current color
+// function that changes the brush color and current color
 
 var changeBrush = function(event) {
   brush = getComputedStyle(event.target).backgroundColor;
@@ -17,8 +17,6 @@ var changeBrush = function(event) {
 
 
 //grabbing elements and setting event listeners for changing //brush color
-
-
 
 var aquamarine = document.getElementsByClassName('aquamarine')[0];
 aquamarine.addEventListener('click', changeBrush);
@@ -56,6 +54,7 @@ eraser.addEventListener('click', changeBrush);
 
 
 //loop to create divs and add event listeners to each div
+
 for (var x = 0; x < 1188; x++) {
   var pixel = document.createElement('div');
   pixel.className = "pixel";
